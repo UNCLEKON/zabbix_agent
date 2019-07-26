@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="虚拟机zabbix_slave" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="虚拟机zabbix_slave">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_zabbix" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
