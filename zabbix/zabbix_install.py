@@ -1,4 +1,4 @@
-#coding = utf-8
+# -*- coding: utf-8 -*-
 
 """
 zabbix_agent自动安装

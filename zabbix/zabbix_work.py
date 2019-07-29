@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os,subprocess
 from zabbix.zabbix_install import path1
 
