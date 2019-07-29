@@ -19,10 +19,15 @@ Zabbix安装并自动化监控
     测试建议 2核CPU，2G内存以上.
     服务器操作系统版本要求 centos7.2 centos7.4
     安装之前请关闭防火墙
+    建议使用python2.7或者3
 ```
-说明：安装请使用
+说明：
+一、安装前需要安装一个定时包apscheduler
 
-zabbix_slave/zabbix/main.py > /var/log/zabbix_agent_person/person_zabbix.log
+pip2.7 install apscheduler
+
+二、执行命令
+python2.7 zabbix_slave/zabbix/main.py > /var/log/zabbix_agent_person/person_zabbix.log
 ```
 
 
@@ -43,7 +48,12 @@ vim /root/listen_port.txt
 
 ```
 
-step2: 拷修改timetodo.py里面的循环执行时间:
+step2: 拷修改zabbix_install.py里面的131行zabbix服务端IP地址:
+```
+ os.system("sed -i 's/=127.0.0.1/=xxxxxxxx/g' %s" %path1)      #服务端IP地址
+```
+
+step3: 拷修改timetodo.py里面的循环执行时间:
 ```
 示例中为10s
 

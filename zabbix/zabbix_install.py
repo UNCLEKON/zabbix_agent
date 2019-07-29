@@ -128,7 +128,7 @@ class zabbix():
             os.system('cat %s |grep "UnsafeUserParameters="' % path1)
 
             #更改操作
-            os.system("sed -i 's/=127.0.0.1/=192.168.115.138/g' %s" %path1)
+            os.system("sed -i 's/=127.0.0.1/=10.1.1.174/g' %s" %path1)      #服务端IP地址
             os.system("sed -i 's/=Zabbix server/={host}/g' {p} ".format(host=hostname,p=path1))
             os.system("sed -i 's/UnsafeUserParameters=0/UnsafeUserParameters=1/g' %s"%path1)
 
